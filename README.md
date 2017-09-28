@@ -1,6 +1,6 @@
 # Shopping List - with Ember and PouchDB 
 
-**Note:** This is a work in progress. 
+<strong style="color:red">Note</strong>: This is a work in progress. 
 
 This Shopping List is an Offline First demo Progressive Web App built using [PouchDB](https://pouchdb.com/) and Ember. [This app is part of a series of Offline First demo apps, each built using a different stack.](https://github.com/ibm-watson-data-lab/shopping-list) 
 
@@ -45,3 +45,7 @@ Shopping List is a simple demo app, with a limited feature set. Here is a list o
 - http://materializecss.com/ - Materialize CSS
 - https://pouchdb.com/ - PouchDB library
 - https://usecuid.org/ - Collision-resistant ids
+
+## Live Demo
+
+To see this app in action without installing anything, simply visit https://ibm-watson-data-lab.github.io/shopping-list-emberjs-pouchdb in a web browser or mobile device.

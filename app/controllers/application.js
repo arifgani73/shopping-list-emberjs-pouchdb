@@ -33,6 +33,13 @@ export default Ember.Controller.extend({
           this.send('refreshRoute')
         })
         .then(() => {
+          if (this.get('isItemsList')) {
+            this.store.unloadAll('item')
+            this.store.findAll('item')
+          } else {
+            this.store.unloadAll('list')
+            this.store.findAll('list')
+          }
           this.send('closeSettingsModal')
         })
     },
