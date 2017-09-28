@@ -1,7 +1,0 @@
-<ul id="shopping-list-items" class="collection">
-  {{#each model as |shoppingListItem|}}
-  <li id="{{shoppingListItem._sanitizedid}}" class="card collection-item">
-    {{shopping-list-item item=shoppingListItem onRemoveItem='removeItem' onUpdateItem='updateItem'}}
-  </li>
-  {{/each}}
-</ul>
