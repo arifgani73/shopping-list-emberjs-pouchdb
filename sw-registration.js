@@ -5,7 +5,7 @@
   var ERROR_HANDLERS = [];
 
   if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('/sw.js', { scope: '/' }).then(function (reg) {
+    navigator.serviceWorker.register('sw.js', { scope: '/' }).then(function (reg) {
       var current = Promise.resolve();
 
       var _loop = function (i) {
