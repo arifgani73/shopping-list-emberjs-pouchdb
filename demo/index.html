@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Shopping List | Ember | PouchDB</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+<meta name="shopping-list-emberjs-pouchdb/config/environment" content="%7B%22modulePrefix%22%3A%22shopping-list-emberjs-pouchdb%22%2C%22environment%22%3A%22development%22%2C%22rootURL%22%3A%22/%22%2C%22locationType%22%3A%22auto%22%2C%22EmberENV%22%3A%7B%22FEATURES%22%3A%7B%7D%2C%22EXTEND_PROTOTYPES%22%3A%7B%22Date%22%3Afalse%7D%7D%2C%22APP%22%3A%7B%22name%22%3A%22shopping-list-emberjs-pouchdb%22%2C%22version%22%3A%220.0.0+8a2bc8db%22%7D%2C%22pouchDBName%22%3A%22shoppinglist%22%2C%22exportApplicationGlobal%22%3Atrue%7D" />
+<script src="/ember-cli-live-reload.js" type="text/javascript"></script>
+<link rel="manifest" href="/manifest.webmanifest">
+<link rel="apple-touch-icon" href="/favicons/android-chrome-192x192.png" sizes="192x192">
+<link rel="apple-touch-icon" href="/favicons/android-chrome-512x512.png" sizes="512x512">
+<meta name="theme-color" content="#283b4f">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Shopping List">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+    
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link integrity="" rel="stylesheet" href="/assets/vendor.css">
+    <link integrity="" rel="stylesheet" href="/assets/shopping-list-emberjs-pouchdb.css">
+
+    
+  </head>
+  <body>
+    <noscript>
+      <p>To use this <a href="https://github.com/ibm-watson-data-lab/shopping-list-emberjs-pouchdb">application</a>, please enable JavaScipt</p>
+    </noscript>
+
+    
+
+    <script>
+      if ('onLine' in navigator) {
+        var onlineStatusUpdate = function () {
+          if (navigator.onLine) {
+            document.body.className = document.body.className.replace('shopping-list-offline', '').trim()
+          } else {
+            document.body.className += ' shopping-list-offline'
+          }
+        }
+
+        window.addEventListener('online',  onlineStatusUpdate)
+        window.addEventListener('offline',  onlineStatusUpdate)
+        onlineStatusUpdate()
+      }
+    </script>
+    <script src="/assets/vendor.js"></script>
+    <script src="/assets/shopping-list-emberjs-pouchdb.js"></script>
+
+    <script src="/sw-registration.js"></script>
+  </body>
+</html>
