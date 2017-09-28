@@ -1,0 +1,327 @@
+body {
+  background-color: #E1E2E1;
+  box-shadow: none !important;
+  overflow-x: hidden;
+}
+
+body * {
+  box-shadow: none !important;
+}
+
+body[data-list-id] {
+  background-color: #FFFFFF !important;
+}
+
+h5 {
+  font-weight: 300;
+}
+
+.btn-flat {
+  color: #7f91A9;
+}
+.btn-flat:hover {
+  background-color: rgba(0,0,0,0.1);
+}
+
+[type="checkbox"]:checked + label::before {
+  border-right-color: #52647A;
+  border-bottom-color: #52647A;
+}
+
+.primary-color {
+  background-color: #52647A !important;
+}
+.primary-color * {
+  color: #FFFFFF !important;
+}
+.primary-color.lighter {
+  background-color: #7f91A9 !important;
+}
+.primary-color.darker {
+  background-color: #273A4E !important;
+}
+
+.secondary-color {
+  background-color: #FF6CA1 !important;
+}
+.secondary-color * {
+  color: #FFFFFF !important;
+}
+.secondary-color.ligher {
+  background-color: #FF9FD2 !important;
+}
+.secondary-color.darker,
+button.secondary-color:focus,
+button.secondary-color:hover {
+  background-color: #C83873 !important;
+}
+
+.tertiary-color {
+  background-color: #E1E2E1 !important;
+}
+.tertiary-color-lighter {
+  background-color: #F5F5F6 !important;
+}
+
+.primary-text {
+  color: #52647A;
+}
+.primary-text.lighter {
+  color: #7f91A9;
+}
+.primary-text.darker {
+  color: #273A4E;
+}
+
+.secondary-text {
+  color: #FF6CA1;
+}
+.secondary-text.lighter {
+  color: #FF9FD2 !important;
+}
+.secondary-text.darker {
+  color: #C83873;
+}
+
+.tertiary-text {
+  color: #E1E2E1;
+}
+.tertiary-text-lighter {
+  color: #F5F5F6;
+}
+
+body.shopping-list-offline .primary-color,
+body.shopping-list-offline .secondary-color {
+  background-color: #273A4E !important;
+}
+body.shopping-list-offline .primary-color *,
+body.shopping-list-offline .secondary-color * {
+  color: #E1E2E1 !important;
+}
+
+.item-edit form,
+.list-edit form {
+  margin: 15px;
+}
+
+.collapsible {
+  border: 0 none !important;
+}
+
+input:focus:not([disabled]):not([readonly]) {
+  border-bottom-color: #52647A !important;
+}
+
+nav .nav-wrapper {
+  padding-left: 10px;
+}
+
+main {
+  margin: 0 auto;
+}
+
+main #add-button {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+}
+
+main .card {
+  margin: 30px;
+}
+
+#shopping-lists,
+#shopping-list-items  {
+  margin: 0;
+  padding: 0 0 75px 0;
+  transition-property: transform;
+  transition-duration: 0.5s;
+}
+
+#shopping-list-items {
+  background-color: #FFFFFF;
+  border: 0 none;
+  min-height: 100vh;
+  vertical-align: top;
+}
+
+.list-edit .card-action,
+.item-edit .card-action {
+  border: 0 none;
+  padding: 0;
+  text-align: right;
+}
+
+#shopping-lists .card-content {
+  cursor: pointer;
+}
+
+#shopping-list-items .card,
+#shopping-list-items .card .collapsible {
+  border: 0 none;
+  box-shadow: initial;
+}
+
+#shopping-list-items .collection-item {
+  border-bottom: 1px solid #DDDDDD;
+  padding: 30px;
+  margin: 0 35px;
+}
+
+#shopping-list-items .card label {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: initial;
+}
+
+.collection-item input:checked ~ label {
+  text-decoration: line-through;
+}
+
+.collection-item input:checked ~ button {
+  visibility: hidden;
+}
+
+.collection-item input:not(:checked) ~ label {
+  color: #212121;
+}
+
+.collapsible {
+  overflow-y: hidden;
+  margin: 0;
+	max-height: calc(100vh - 65px);
+	transition-property: all;
+	transition-duration: .55s;
+}
+
+.collapsible.closed {
+	max-height: 0;
+	transition-property: all;
+	transition-duration: .15s;
+}
+
+.card.collapsible {
+	transition-duration: 2s;
+}
+
+body.shopping-list-add-modal .bottom-sheet {
+  z-index: 1007;
+  display: block;
+  bottom: 0px;
+  opacity: 1;
+	transition-property: bottom;
+	transition-duration: .75s;
+}
+
+body.shopping-list-add-modal .modal-overlay,
+body.shopping-list-settings-modal .modal-overlay {
+  display: block;
+  opacity: 0.5;
+	transition-property: all;
+	transition-duration: 0.25s;
+  z-index: 1006; 
+}
+
+body[data-list-id] #shopping-lists,
+body[data-list-id] #shopping-list-items {
+  transform: translate(-100vw);
+}
+
+[type="checkbox"]:disabled:not(:checked) + label::before {
+  display: none;
+}
+
+.more-btn {
+  padding: 2px 15px;
+}
+
+.modal.top-sheet {
+  bottom: auto;
+  top: -100%;
+  margin: 0;
+  width: 100%;
+  border-radius: 0;
+  will-change: bottom, opacity;
+}
+
+body.shopping-list-settings-modal .top-sheet {
+  z-index: 1007;
+  display: block;
+  top: 0px;
+  opacity: 1;
+  transition-property: top;
+  transition-duration: .75s;
+}
+
+.settings {
+  margin-right: 25px;
+}
+
+#shopping-list-settings .input-field {
+  margin-top: 2.2rem;
+}
+
+#shopping-list-settings label {
+  font-size: 1.2rem;
+  top: -20px;
+}
+
+#shopping-list-settings .chip {
+  display: none;
+  font-weight: 300;
+}
+
+body.shopping-list-error-sync nav a.settings:first-of-type,
+body:not(.shopping-list-error-sync) nav a.settings:last-of-type  {
+  display: none;
+}
+
+body:not(.shopping-list-error-sync) nav a.settings:first-of-type,
+body.shopping-list-error-sync nav a.settings:last-of-type  {
+  display: initial;
+}
+
+.shopping-list-error-sync #shopping-list-settings .chip {
+  display: inline-block;
+  background-color: #C83873;
+  color: #FFFFFF;
+}
+
+.shopping-list-error-sync #shopping-list-settings .chip::after {
+  content: 'Sync Error';
+}
+
+.shopping-list-sync #shopping-list-settings .chip {
+  display: inline-block;
+  background-color: #273A4E;
+  color: #FFFFFF;
+}
+
+.shopping-list-sync #shopping-list-settings .chip::after {
+  content: 'Syncing';
+}
+
+.shopping-list-sync nav a.settings > i {
+  display: inline-block;
+  animation-name: spinanimation;
+  animation-duration: 0.7s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes spinanimation {
+  from { -webkit-transform: rotate(0deg) }
+  to { -webkit-transform: rotate(360deg) }
+}
+@-moz-keyframes spinanimation {
+  from { -moz-transform: rotate(0deg) }
+  to { -moz-transform: rotate(360deg) }
+}
+@-ms-keyframes spinanimation {
+  from { -ms-transform: rotate(0deg) }
+  to { -ms-transform:rotate(360deg) }
+}
+@keyframes spinanimation {
+  from { transform: rotate(0deg) }
+  to { transform: rotate(360deg) }
+}

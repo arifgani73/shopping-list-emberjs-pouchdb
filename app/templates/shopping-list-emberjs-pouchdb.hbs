@@ -1,0 +1,7 @@
+<div id="shopping-lists">
+  {{#each model as |shoppingList|}}
+  <div id="{{shoppingList._sanitizedid}}" class="card collapsible">
+    {{shopping-list-list list=shoppingList onRemoveList='removeList' onUpdateList='updateList'}}
+  </div>
+  {{/each}}
+</div>
